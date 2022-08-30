@@ -1,0 +1,30 @@
+$primary-color: #ffd700;
+$bg-color: #24252b;
+$font-color: white;
+$sidebar-width: 100px;
+
+@import "~bootstrap/scss/bootstrap";
+@import "animate.css";
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url('./assets/fonts/Helvetica_Neue.ttf') format('ttf');
+}
+
+body {
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+.App {
+    padding-left: $sidebar-width;
+}
+
+.sidebar {
+    width: $sidebar-width;
+    margin-left: -$sidebar-width;
+}
+
+.home {
+    width: 100%;
+}

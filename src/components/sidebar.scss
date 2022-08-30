@@ -1,0 +1,30 @@
+$spacer: 8;
+
+.sidebar {
+    height: clamp(500px, 100%, 100%);
+    position: fixed;
+    background-color: #19191c;
+    top: 0;
+
+    .logo {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    li {
+        margin-bottom: ($spacer * 1px);
+    }
+}
+
+.nav-item {
+    svg {
+        font-size: 28px;
+        color: white;
+    }
+
+    &.active {
+        svg {
+            color: blue;
+        }
+    }
+}
