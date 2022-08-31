@@ -1,6 +1,8 @@
-$spacer: 8;
+@import "../utilities/variables";
 
 .sidebar {
+    width: $sidebar-width;
+    margin-left: -$sidebar-width;
     height: clamp(500px, 100%, 100%);
     position: fixed;
     background-color: #19191c;
@@ -11,20 +13,19 @@ $spacer: 8;
         text-align: center;
     }
 
-    li {
+    .nav-item {
         margin-bottom: ($spacer * 1px);
-    }
-}
 
-.nav-item {
-    svg {
-        font-size: 28px;
-        color: white;
-    }
-
-    &.active {
         svg {
-            color: blue;
+            font-size: 28px;
+            color: white;
+        }
+    
+        &.active {
+            svg {
+                color: blue;
+            }
         }
     }
 }
+
