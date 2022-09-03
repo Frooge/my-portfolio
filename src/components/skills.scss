@@ -1,0 +1,25 @@
+@import "../utilities/variables";
+
+.skills {
+    width: 100%;
+    background-color: $bg-color-2;
+    padding: 50px 5vw;
+
+    .title {
+        
+    }
+
+    .col-content {
+        padding: 20px 50px;
+
+        a {
+            margin-bottom: 20px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+                
+            }
+        }
+    }
+}

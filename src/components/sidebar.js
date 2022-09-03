@@ -1,7 +1,7 @@
 import React from 'react';
 import './sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faCode, faBook, faContactCard, faBirthdayCake } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faCode, faBook, faContactCard } from '@fortawesome/free-solid-svg-icons';
 
 export default function Sidebar() {
   return (
