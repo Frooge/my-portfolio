@@ -6,6 +6,7 @@
     height: clamp(500px, 100%, 100%);
     position: fixed;
     background-color: #19191c;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     top: 0;
 
     .logo {
@@ -13,18 +14,28 @@
         text-align: center;
     }
 
+    ul {
+        margin-top: 50px;
+    }
+
     .nav-item {
-        margin-bottom: ($spacer * 1px);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px, rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: $sidebar-width;
+        width: $sidebar-width + 10px;
+        margin: 5px 0px;
+        display: flex;
+        vertical-align: middle;
+        background-color: #2f2f33;
+        cursor: pointer;
 
         svg {
-            font-size: 28px;
+            font-size: 32px;
+            margin: auto;
             color: white;
         }
     
         &.active {
-            svg {
-                color: blue;
-            }
+            background-color: #eb5757;
         }
     }
 }

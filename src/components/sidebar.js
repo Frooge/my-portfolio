@@ -7,7 +7,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
         <div className="logo w-100 mb-5 mt-4">
-          <FontAwesomeIcon icon={faBirthdayCake}/>
+          J
         </div>
         <ul className="nav flex-column mb-auto text-center">
           <li class="nav-item active">

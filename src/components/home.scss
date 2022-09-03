@@ -2,4 +2,24 @@
 
 .home {
     width: 100%;
+
+    .text-zone {
+        margin-top: 120px;
+        padding: 0px 5vw;
+
+        .name {
+            font-family: 'Sans Serif Bold';
+        }
+        h1 {
+            font-size: 56px;
+            line-height: 150%;
+        }
+        h2 {
+            font-size: 24px;
+            color: gray;
+        }
+        button {
+            font-size: 24px;
+        }
+    }
 }
