@@ -2,7 +2,8 @@
 
 .home {
     width: 100%;
-    padding: 30vh 5vw;
+    height: 920px;
+    padding: 26vh 5vw;
     background-color: $bg-color-1;
 
     .text-zone {
@@ -11,11 +12,9 @@
             font-family: 'Sans Serif Bold';
         }
         h1 {
-            font-size: 56px;
             line-height: 150%;
         }
         h2 {
-            font-size: 24px;
             color: gray;
         }
         button {

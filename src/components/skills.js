@@ -5,8 +5,8 @@ import './skills.scss'
 
 export default function Skills() {
     return (
-        <div className="skills">
-            <h1 className="title" align="center">- My Skills && Experiences -</h1>
+        <div id="skills" className="skills">
+            <h1 align="center">- My Skills && Experiences -</h1>
             <div className="container">
                 <div className="row justify-content-center">
                     <AnimationOnScroll animateIn="animate__fadeIn" delay="0" className="col-content col-md-6">

@@ -25,6 +25,13 @@ body::-webkit-scrollbar-thumb
 body {
     color: $font-color;
     font-family: 'Sans Serif Book';
+
+    h1 {
+        font-size: 56px;
+    }
+    h2 {
+        font-size: 24px;
+    }
 }
 
 .App {

@@ -23,16 +23,23 @@
         height: $sidebar-width;
         width: $sidebar-width + 10px;
         margin: 5px 0px;
-        display: flex;
+        
         vertical-align: middle;
         background-color: #2f2f33;
         cursor: pointer;
 
-        svg {
-            font-size: 32px;
-            margin: auto;
-            color: white;
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            svg {
+                font-size: 32px;
+                margin: auto;
+                color: white;
+            }
         }
+
+        
     
         &.active {
             background-color: #eb5757;
