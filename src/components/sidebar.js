@@ -18,6 +18,7 @@ export default function Sidebar({height}) {
   }
 
   const handleScroll = () => {
+    calculateElementHeight();
     const position = window.pageYOffset;
     elementHeight.every((element, i) => {
       if(position < element.height) {
@@ -29,7 +30,6 @@ export default function Sidebar({height}) {
   }
 
   useEffect(() => {
-    calculateElementHeight();
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
