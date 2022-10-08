@@ -5,4 +5,42 @@
     min-height: 1000px;
     background-color: $bg-color-4;
     padding: 50px 5vw;
+
+    .contact-form {
+        width: 480px;
+        margin: 20px auto;
+        background-color: $bg-color-3;
+        padding: 20px 30px;
+        border-radius: 10px;
+
+        textarea {
+            background-color: $bg-color-2;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        select.form-control {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+        color: white;
+        }
+
+        input[type="text"]:focus,
+        select.form-control:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        }
+
+        button {
+            
+        }
+    }
+
+    
 }

@@ -10,7 +10,7 @@ export default function Skills() {
             <h1 align="center">- My Skills && Experiences -</h1>
             <div className="container">
                 <div className="row justify-content-center">
-                    <AnimationOnScroll animateIn="animate__fadeIn" delay="0" className="col-content col-md-6">
+                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="0" className="col-content col-md-6">
                             <h2 align="center">Languages</h2>
                             <div align="center" className="row">
                                 {
@@ -22,7 +22,7 @@ export default function Skills() {
                                 }
                             </div>
                     </AnimationOnScroll>
-                    <AnimationOnScroll animateIn="animate__fadeIn" delay="250" className="col-content col-md-6">
+                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="250" className="col-content col-md-6">
                         <h2 align="center">Frameworks</h2>
                         <div align="center" className="row">
                             {
@@ -34,7 +34,7 @@ export default function Skills() {
                             }
                         </div>
                     </AnimationOnScroll>
-                    <AnimationOnScroll animateIn="animate__fadeIn" delay="500" className="col-content col-md-6">
+                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="500" className="col-content col-md-6">
                         <h2 align="center">Tools</h2>
                         <div align="center" className="row justify-content-center">
                         {
