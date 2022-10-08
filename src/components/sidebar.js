@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faCode, faBook, faContactCard } from '@fortawesome/free-solid-svg-icons';
+import { SocialIcon } from 'react-social-icons';
 
 import './sidebar.scss';
+
+
 
 export default function Sidebar({height}) {
   const [activeTab, setActiveTab] = useState('home');
@@ -44,7 +47,7 @@ export default function Sidebar({height}) {
   return (
     <div className="sidebar">
         <div className="logo w-100 mb-5 mt-4">
-          J
+        🙏
         </div>
         <ul className="nav flex-column mb-auto text-center">
           <li className={activeTab === 'home' ? 'nav-item active' : 'nav-item'}>
@@ -68,6 +71,11 @@ export default function Sidebar({height}) {
             </a>
           </li>
         </ul> 
+        <div className="social-icons flex-column text-center">
+            <SocialIcon url="https://www.linkedin.com/in/jade-andrie-rosales-2a4706223/"/>
+            <SocialIcon url="https://github.com/Frooge"/>
+            <SocialIcon url="https://www.facebook.com/jade.rosales.90857/"/>
+        </div>
     </div>
   )
 }

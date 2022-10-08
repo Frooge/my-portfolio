@@ -8,6 +8,7 @@ import Contacts from './components/contacts';
 import './App.scss';
 import 'animate.css/animate.css';
 
+
 function App() {
   const [height, setHeight] = useState({home: 0, skills: 0, projects: 0, contacts: 0});
   const [isLoading, setLoading] = useState(true);
