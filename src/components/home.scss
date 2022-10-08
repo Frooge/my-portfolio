@@ -3,23 +3,36 @@
 .home {
     width: 100%;
     min-height: 920px;
-    padding: 26vh 5vw;
+    padding: 25px 50px;
     background-color: $bg-color-1;
+    display: flex;
+    flex-direction: column;
+    
 
-    .text-zone {
-
-        .name {
-            font-family: 'Sans Serif Bold';
-        }
-        h1 {
-            line-height: 150%;
-        }
-        h2 {
-            color: gray;
-        }
-        button {
-            font-size: 24px;
-            border-radius: 0px;
+    .social-icons {
+        a {
+            margin-left: 10px;
         }
     }
+
+    .content {
+        margin-top: 10%;
+        .text-zone {
+            align-items: center;
+            .name {
+                font-family: 'Sans Serif Bold';
+            }
+            h1 {
+                line-height: 150%;
+            }
+            h2 {
+                color: gray;
+            }
+            button {
+                font-size: 24px;
+                border-radius: 0px;
+            }
+        }
+    }
+    
 }

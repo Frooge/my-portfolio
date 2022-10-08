@@ -1,13 +1,19 @@
 import React from 'react';
 import AnimatedLetters from './animation/animatedLetters';
+import { SocialIcon } from 'react-social-icons';
 
 import './home.scss';
 
 export default function Home() {
   return (
     <div id="home" className="home">
-      <div className="container">
-        <div className="text-zone">
+      <div className="social-icons">
+        <SocialIcon url="https://www.linkedin.com/in/jade-andrie-rosales-2a4706223/" fgColor='white'/>
+        <SocialIcon url="https://github.com/Frooge" fgColor='white'/>
+        <SocialIcon url="https://www.facebook.com/jade.rosales.90857/" fgColor='white'/>
+      </div>
+      <div className="content container row">
+        <div className="text-zone col-8">
           <h1>
             <AnimatedLetters text="Hey There," idx="1"/>
             <br/>
@@ -18,7 +24,7 @@ export default function Home() {
           </h1>
           <h2 className="animate__animated animate__fadeIn animate__delay-3s">Front End Developer && Back End Developer</h2>    
           <br/>
-          <button className="btn btn-outline-warning animate__animated animate__fadeIn animate__delay-4s">Contact Me</button>
+          <a href="#contacts"><button className="btn btn-outline-warning animate__animated animate__fadeIn animate__delay-4s">Contact Me</button></a>
         </div>
       </div>
     </div>
