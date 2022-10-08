@@ -10,6 +10,7 @@ import 'animate.css/animate.css';
 
 function App() {
   const [height, setHeight] = useState({home: 0, skills: 0, projects: 0, contacts: 0});
+  const [isLoading, setLoading] = useState(true);
 
   const homeRef = useRef(null);
   const skillsRef = useRef(null);
@@ -17,17 +18,19 @@ function App() {
   const contactsRef = useRef(null);
 
   useEffect(() => {
-    setHeight({
+    const updated = {
       home: homeRef.current.clientHeight,
       skills: skillsRef.current.clientHeight,
       projects: projectsRef.current.clientHeight,
       contacts: contactsRef.current.clientHeight
-    });
+    }
+    setHeight(updated);
+    setLoading(false);
   }, []);
 
   return (
     <div className="App">
-        <Sidebar height={height}/>
+        <Sidebar key={isLoading} height={height}/>
         <div ref={homeRef}>
           <Home />
         </div>

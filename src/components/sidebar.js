@@ -7,6 +7,7 @@ import './sidebar.scss';
 export default function Sidebar({height}) {
   const [activeTab, setActiveTab] = useState('home');
   const [elementHeight, setElementHeight] = useState([]);
+  const [isLoading, setLoading] = useState(true);
 
   const calculateElementHeight = () => {
     setElementHeight([
@@ -18,9 +19,10 @@ export default function Sidebar({height}) {
   }
 
   const handleScroll = () => {
-    calculateElementHeight();
+    
     const position = window.pageYOffset;
     elementHeight.every((element, i) => {
+      
       if(position < element.height) {
         setActiveTab(element.tab);
         return false;
@@ -30,12 +32,14 @@ export default function Sidebar({height}) {
   }
 
   useEffect(() => {
+    calculateElementHeight();
     window.addEventListener('scroll', handleScroll, { passive: true });
+    setLoading(false);
 
     return () => {
         window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isLoading]);
 
   return (
     <div className="sidebar">
