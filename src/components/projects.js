@@ -9,6 +9,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="projects">
+      <div className="container">
         <h1 align="center">- Projects -</h1>
         <Masonry columnsCount={3}>
           {
@@ -17,6 +18,7 @@ export default function Projects() {
             ))
           }
         </Masonry>
+      </div>  
     </div>
   )
 }
