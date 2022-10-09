@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div id="home" className="home">
       <div className="social-icons">
-        <SocialIcon url="https://www.linkedin.com/in/jade-andrie-rosales-2a4706223/" fgColor='white'/>
-        <SocialIcon url="https://github.com/Frooge" fgColor='white'/>
-        <SocialIcon url="https://www.facebook.com/jade.rosales.90857/" fgColor='white'/>
+        <SocialIcon url="https://www.linkedin.com/in/jade-andrie-rosales-2a4706223/" target='_blank' fgColor='white'/>
+        <SocialIcon url="https://github.com/Frooge" target='_blank' fgColor='white'/>
+        <SocialIcon url="https://www.facebook.com/jade.rosales.90857/" target='_blank' fgColor='white'/>
       </div>
       <div className="content container row">
         <div className="text-zone col-8">

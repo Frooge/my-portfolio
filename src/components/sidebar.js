@@ -72,9 +72,9 @@ export default function Sidebar({height}) {
           </li>
         </ul> 
         <div className="social-icons flex-column text-center">
-            <SocialIcon url="https://www.linkedin.com/in/jade-andrie-rosales-2a4706223/"/>
-            <SocialIcon url="https://github.com/Frooge"/>
-            <SocialIcon url="https://www.facebook.com/jade.rosales.90857/"/>
+            <SocialIcon url="https://www.linkedin.com/in/jade-andrie-rosales-2a4706223/" target='_blank' fgColor='white'/>
+            <SocialIcon url="https://github.com/Frooge"  target='_blank' fgColor='white'/>
+            <SocialIcon url="https://www.facebook.com/jade.rosales.90857/"  target='_blank' fgColor='white'/>
         </div>
     </div>
   )

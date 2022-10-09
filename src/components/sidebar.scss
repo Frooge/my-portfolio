@@ -8,8 +8,12 @@
     background-color: #19191c;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     top: 0;
+    z-index: 99;
     display: flex;
     flex-direction: column;
+    opacity: 1;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, $bg-color-1 0, $bg-color-1 1px, #19191c 0, #19191c 50%);
 
     .logo {
         font-size: 48px;
