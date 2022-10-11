@@ -22,7 +22,7 @@ export default function Home() {
             <br/>
             <AnimatedLetters text="web developer." idx="24"/>
           </h1>
-          <h2 className="animate__animated animate__fadeIn animate__delay-3s">Front End Developer && Back End Developer</h2>    
+          <h2 className="animate__animated animate__fadeIn animate__delay-3s">An Aspiring Full Stack Developer</h2>    
           <br/>
           <a href="#contacts"><button className="btn btn-outline-warning animate__animated animate__fadeIn animate__delay-4s">Contact Me</button></a>
         </div>

@@ -5,8 +5,6 @@
     min-height: 920px;
     background-color: $bg-color-3;
     padding: 50px 5vw;
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, $bg-color-3 20%, $bg-color-3 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, $bg-color-3 20%, $bg-color-3 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient($bg-color-light-3 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, $bg-color-light-3 1.8px, $bg-color-3 1.8px) -0.9px 0;
-    background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    box-shadow: $bg-color-4 0px -60px 36px -28px inset;
+
     }

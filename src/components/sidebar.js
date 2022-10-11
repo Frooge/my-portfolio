@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faCode, faBook, faContactCard } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faCode, faContactCard, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { SocialIcon } from 'react-social-icons';
 
 import './sidebar.scss';
@@ -57,17 +57,17 @@ export default function Sidebar({height}) {
           </li>
           <li className={activeTab === 'skills' ? 'nav-item active' : 'nav-item'}>
             <a href="#skills">
-              <FontAwesomeIcon icon={faCode} />
+              <FontAwesomeIcon icon={faContactCard} />
             </a>
           </li>
           <li className={activeTab === 'projects' ? 'nav-item active' : 'nav-item'}>
             <a href="#projects">
-              <FontAwesomeIcon icon={faBook} />
+              <FontAwesomeIcon icon={faCode} />
             </a>
           </li>
           <li className={activeTab === 'contacts' ? 'nav-item active' : 'nav-item'}>
             <a href="#contacts">
-              <FontAwesomeIcon icon={faContactCard} />
+              <FontAwesomeIcon icon={faPhone} />
             </a>
           </li>
         </ul> 
