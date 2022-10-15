@@ -5,8 +5,6 @@ import { SocialIcon } from 'react-social-icons';
 
 import './sidebar.scss';
 
-
-
 export default function Sidebar({height}) {
   const [activeTab, setActiveTab] = useState('home');
   const [elementHeight, setElementHeight] = useState([]);
@@ -47,9 +45,9 @@ export default function Sidebar({height}) {
   return (
     <div className="sidebar">
         <div className="logo w-100 mb-5 mt-4">
-        🙏
+          <img src={require('../assets/images/j-icon.png')} alt='icon'/>
         </div>
-        <ul className="nav flex-column mb-auto text-center">
+        <ul className="nav flex-column mb-auto mt-auto">
           <li className={activeTab === 'home' ? 'nav-item active' : 'nav-item'}>
             <a href="#home">
               <FontAwesomeIcon icon={faHouse}/>
