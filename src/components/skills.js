@@ -8,7 +8,7 @@ export default function Skills() {
     return (
         <div id="skills" className="skills">
             <div className="container d-flex flex-column">
-                <div className="row align-items-center profile">
+                <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="0" className="row align-items-center profile">
                     <div className="col-3">
                         <img className="dev-face" src="https://avatars.githubusercontent.com/u/88530893?s=400&u=c3c1e638fa48a121255cfb89507769a8b2ab1e7d&v=4" alt="dev_face"/>
                     </div>
@@ -22,9 +22,9 @@ export default function Skills() {
                             As of now, I'm currently learning web development mainly with ReactJs.
                         </p>
                     </div>
-                </div>
+                </AnimationOnScroll>
                 <div className="row justify-content-center">
-                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="0" className="col-content col-md-6">
+                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="250" className="col-content col-md-6">
                             <h2 align="center">Languages</h2>
                             <div align="center" className="row">
                                 {
@@ -36,7 +36,7 @@ export default function Skills() {
                                 }
                             </div>
                     </AnimationOnScroll>
-                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="250" className="col-content col-md-6">
+                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="500" className="col-content col-md-6">
                         <h2 align="center">Frameworks</h2>
                         <div align="center" className="row">
                             {
@@ -48,7 +48,7 @@ export default function Skills() {
                             }
                         </div>
                     </AnimationOnScroll>
-                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="500" className="col-content col-md-6">
+                    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="750" className="col-content col-md-6">
                         <h2 align="center">Tools</h2>
                         <div align="center" className="row justify-content-center">
                         {
