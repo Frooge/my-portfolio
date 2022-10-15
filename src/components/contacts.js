@@ -25,7 +25,7 @@ export default function Contacts() {
 
   return (
     <div id="contacts" className="contacts">
-        <h1 align="center">- Contact Me -</h1>
+        <h1 align="center">Contact Me</h1>
         <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="0">
           <div className="contact-form">
             <form ref={form} className="row" onSubmit={sendEmail}>

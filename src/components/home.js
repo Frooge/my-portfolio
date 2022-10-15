@@ -3,6 +3,7 @@ import AnimatedLetters from './animation/animatedLetters';
 import { SocialIcon } from 'react-social-icons';
 import { Canvas, useFrame } from '@react-three/fiber'
 import * as THREE from "three";
+
 import moon from '../assets/images/moon.jpg';
 
 
@@ -35,7 +36,7 @@ export default function Home() {
         <div className="col-6">
           <Canvas camera={{ fov: 35, zoom: 1.3, near: 1, far: 1000 }}>
             <ambientLight intensity={0.1} />
-            <directionalLight color="red" position={[0, 0, 5]} />
+            <directionalLight intensity={0.5} />
             <RotatingObject/>
           </Canvas>
         </div>
@@ -47,9 +48,8 @@ export default function Home() {
 const RotatingObject = () => {
   const myMesh = useRef();
 
-  useFrame(({ clock }) => {
-    myMesh.current.rotation.x += 0.001;
-    myMesh.current.rotation.y += 0.002;
+  useFrame(() => {
+    myMesh.current.rotation.x = myMesh.current.rotation.y += 0.001;
   });
   const texture = useMemo(() => new THREE.TextureLoader().load(moon), []);
 

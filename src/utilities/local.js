@@ -31,5 +31,10 @@ export const local = {
         {img: 'https://bobbyhadz.com/images/blog/react-import-const-from-another-file/banner.webp',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
         {img: 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
         {img: 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
+        {img: 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
+        {img: 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
+        {img: 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
+        {img: 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
+        {img: 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
     ]
 };
