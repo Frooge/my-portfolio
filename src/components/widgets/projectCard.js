@@ -6,7 +6,7 @@ export default function ProjectCard({img, title, desc, src}) {
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="0">
       <div className='projectCard'>
-      <a href={src} target="_blank">
+      <a href={src} target="_blank" rel="noreferrer">
         <img src={img} alt={title}/>
         <div className='text-zone'>
           <h2>{title}</h2>
