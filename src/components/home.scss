@@ -21,6 +21,7 @@
 
     .content {
         margin-top: 10%;
+
         .text-zone {
             align-items: center;
             .name {
@@ -37,6 +38,20 @@
                 border-radius: 0px;
             }
         }
+        .banner-zone {
+            @media screen and (max-width: $large) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: $large) {
+            margin-top: unset;
+        }
     }
-    
+
+    @media screen and (max-width: $large) {
+        align-items: flex-start;
+        min-height: unset;
+        padding: 100px 50px;
+    }
 }

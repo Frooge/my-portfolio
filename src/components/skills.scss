@@ -30,11 +30,23 @@
         .dev-face {
             width: 100%;
             border-radius: 100%;
+
+            @media screen and (max-width: $medium) {
+                width: 50%;
+            }
         }
     
         .text-area {
             padding: 0 50px;
-            font-size: large;
+            font-size: larger;
+
+            @media screen and (max-width: $medium) {
+                margin-top: 50px;
+            }
+        }
+
+        @media screen and (max-width: $medium) {
+            text-align: center;
         }
 
         

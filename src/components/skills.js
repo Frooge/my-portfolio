@@ -9,7 +9,7 @@ export default function Skills() {
         <div id="skills" className="skills">
             <div className="container d-flex flex-column">
                 <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="0" className="row align-items-center profile">
-                    <div className="col-3">
+                    <div className="col-md-3">
                         <img className="dev-face" src="https://avatars.githubusercontent.com/u/88530893?s=400&u=c3c1e638fa48a121255cfb89507769a8b2ab1e7d&v=4" alt="dev_face"/>
                     </div>
                     <div className="col text-area">
@@ -29,7 +29,7 @@ export default function Skills() {
                             <div align="center" className="row">
                                 {
                                     local.skills.languages.map((item, index) => (
-                                        <a href={item.ref} target="_blank" rel="noreferrer" className="col-2" key={`langs-${index}`}>
+                                        <a href={item.ref} target="_blank" rel="noreferrer" className="col-lg-2 col-md-4 col-6" key={`langs-${index}`}>
                                             <img src={item.img} alt={item.name} width="60" height="60"/>
                                         </a>
                                     ))
@@ -41,7 +41,7 @@ export default function Skills() {
                         <div align="center" className="row">
                             {
                                 local.skills.frameworks.map((item, index) => (
-                                    <a href={item.ref} target="_blank" rel="noreferrer" className="col-2" key={`frame-${index}`}>
+                                    <a href={item.ref} target="_blank" rel="noreferrer" className="col-lg-2 col-md-4 col-6" key={`frame-${index}`}>
                                         <img src={item.img} alt={item.name} width="60" height="60"/>
                                     </a>
                                 ))
@@ -53,7 +53,7 @@ export default function Skills() {
                         <div align="center" className="row justify-content-center">
                         {
                             local.skills.tools.map((item, index) => (
-                                <a href={item.ref} target="_blank" rel="noreferrer" className="col-2" key={`tools-${index}`}>
+                                <a href={item.ref} target="_blank" rel="noreferrer" className="col-lg-2 col-md-4 col-6" key={`tools-${index}`}>
                                     <img src={item.img} alt={item.name} width="60" height="60"/>
                                 </a>
                             ))

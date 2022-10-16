@@ -36,4 +36,8 @@ body {
 
 .App {
     padding-left: $sidebar-width;
+
+    @media screen and (max-width: $medium) {
+        padding-left: 0;
+    }
 }
