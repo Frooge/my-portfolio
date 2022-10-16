@@ -2,7 +2,7 @@ import React from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import './projectCard.scss';
 
-export default function ProjectCard({img, title, desc, src}) {
+export default function ProjectCard({img, title, desc, year, src}) {
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true" delay="0">
       <div className='projectCard'>
@@ -12,7 +12,7 @@ export default function ProjectCard({img, title, desc, src}) {
           <h2>{title}</h2>
           <p>{desc}</p>
         </div>
-        
+        <span className="metadata">{year}</span>
       </a>
     </div>
     </AnimationOnScroll>

@@ -16,7 +16,7 @@ export default function Projects() {
           {
             local.projects.map((project, index) => (
               <AnimationOnScroll key={`${project.title}_${index}`} animateIn="animate__fadeIn" animateOnce="true" delay={delay[index%3]}>
-                <ProjectCard img={project.img} title={project.title} desc={project.desc} src={project.ref}/>
+                <ProjectCard img={project.img} title={project.title} desc={project.desc} year={project.year} src={project.ref}/>
               </AnimationOnScroll>
             ))
           }
