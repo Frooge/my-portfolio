@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-portolio/static/css/main.20894b12.css",
+    "main.js": "/my-portolio/static/js/main.22a08daa.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/Helvetica Neue LTW0697BlkCnObl.otf": "/my-portolio/static/media/Helvetica Neue LTW0697BlkCnObl.5190ff59af2f5af19a32.otf",
+    "static/media/rat.gltf": "/my-portolio/static/media/rat.f02619008267ab184836.gltf",
+    "static/media/Helvetica Neue LTW0697BlkCnObl.ttf": "/my-portolio/static/media/Helvetica Neue LTW0697BlkCnObl.7999cc3419aa06b10394.ttf",
+    "static/media/SansSerifBldFLF-Italic.otf": "/my-portolio/static/media/SansSerifBldFLF-Italic.31a1a30805ba961f58a6.otf",
+    "static/media/SansSerifBookFLF-Italic.otf": "/my-portolio/static/media/SansSerifBookFLF-Italic.7e84a07c980ee28c19e5.otf",
+    "static/media/SansSerifBookFLF.otf": "/my-portolio/static/media/SansSerifBookFLF.48210d2a8a4e4b66d9b7.otf",
+    "static/media/SansSerifBldFLF.otf": "/my-portolio/static/media/SansSerifBldFLF.0ca92abd6a97ea252201.otf",
+    "static/media/SansSerifFLF.otf": "/my-portolio/static/media/SansSerifFLF.109bfa9c0ba5a5645085.otf",
+    "index.html": "/my-portolio/index.html",
+    "main.20894b12.css.map": "/my-portolio/static/css/main.20894b12.css.map",
+    "main.22a08daa.js.map": "/my-portolio/static/js/main.22a08daa.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20894b12.css",
+    "static/js/main.22a08daa.js"
+  ]
+}
