@@ -1,13 +1,14 @@
-import React, { useRef, useMemo } from 'react';
+import React, { Suspense, useRef } from 'react';
 import AnimatedLetters from './animation/animatedLetters';
 import { SocialIcon } from 'react-social-icons';
 import { Canvas, useFrame } from '@react-three/fiber'
-import * as THREE from "three";
+import { Html, useProgress, OrbitControls, useGLTF } from '@react-three/drei'
 
-import moon from '../assets/images/moon.jpg';
 
 
 import './home.scss';
+//import { Model } from '../assets/3dmodels/';
+import Model from '../assets/3dmodels/food_3d.gltf';
 
 export default function Home() {
   
@@ -20,7 +21,7 @@ export default function Home() {
         <SocialIcon url="https://www.facebook.com/jade.rosales.90857/" target='_blank' fgColor='white'/>
       </div>
       <div className="content container row">
-        <div className="text-zone col-6">
+        <div className="text-zone col-lg-6">
           <h1>
             <AnimatedLetters text="Hey There," idx="1"/>
             <br/>
@@ -33,11 +34,14 @@ export default function Home() {
           <br/>
           <a href="#contacts"><button className="btn btn-outline-warning animate__animated animate__fadeIn animate__delay-4s">Contact Me</button></a>
         </div>
-        <div className="col-6">
-          <Canvas camera={{ fov: 35, zoom: 1.3, near: 1, far: 1000 }}>
+        <div className="banner-zone col-6">
+          <Canvas className="canvas" camera={{ fov: 75, near: 1, far: 1000, position: [3,1,2] }}>
             <ambientLight intensity={0.1} />
             <directionalLight intensity={0.5} />
-            <RotatingObject/>
+            <Suspense fallback={<Loader />}>
+              <RotatingObject/>
+              <OrbitControls/>
+            </Suspense> 
           </Canvas>
         </div>
       </div>
@@ -45,20 +49,20 @@ export default function Home() {
   )
 }
 
+function Loader() {
+  const { progress } = useProgress()
+  return <Html center>{progress} % loaded</Html>
+}
+
 const RotatingObject = () => {
-  const myMesh = useRef();
-
+  const gltf = useGLTF(Model);
+  const model = useRef();
   useFrame(() => {
-    myMesh.current.rotation.x = myMesh.current.rotation.y += 0.001;
+      model.current.rotation.y += 0.002;
   });
-  const texture = useMemo(() => new THREE.TextureLoader().load(moon), []);
-
   return (
-    <mesh ref={myMesh}>
-      <sphereGeometry scale={{x: 100, y: 100}}/>
-      <meshBasicMaterial color='white' attach='material'>
-        <primitive attach='map' object={texture}/>
-      </meshBasicMaterial>
+    <mesh ref={model} scale={1.2}>
+      <primitive object={gltf.scene} scale={0.7} />
     </mesh>
   )
 };

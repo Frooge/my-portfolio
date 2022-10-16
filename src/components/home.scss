@@ -39,6 +39,8 @@
             }
         }
         .banner-zone {
+            position: relative;
+            overflow: visible;
             @media screen and (max-width: $large) {
                 display: none;
             }
