@@ -27,7 +27,7 @@ export default function Home() {
             <AnimatedLetters text="I'm " idx="8"/>
             <span className="name"><AnimatedLetters text="Jade Andrie" idx="11"/></span>
             <br/>
-            <AnimatedLetters text="web developer." idx="24"/>
+            <AnimatedLetters text="software dev." idx="24"/>
           </h1>
           <h2 className="animate__animated animate__fadeIn animate__delay-3s">An Aspiring Full Stack Developer</h2>    
           <br/>

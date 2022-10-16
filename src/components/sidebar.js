@@ -44,7 +44,7 @@ export default function Sidebar({height}) {
 
   return (
     <div className="sidebar">
-        <div className="logo w-100 mb-5 mt-4">
+        <div className="logo w-100 mb-5 mt-5">
           <img src={require('../assets/images/j-icon.png')} alt='icon'/>
         </div>
         <ul className="nav flex-column mb-auto mt-auto">
