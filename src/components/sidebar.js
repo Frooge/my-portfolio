@@ -22,7 +22,7 @@ export default function Sidebar({height}) {
 
   const handleScroll = () => {
     const position = window.pageYOffset;
-    calculation.every((element, i) => {
+    calculation.every((element) => {
       
       if(position < element.height) {
         setActiveTab(element.tab);
