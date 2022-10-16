@@ -27,7 +27,7 @@ function App() {
     }
     setHeight(updated);
     setLoading(false);
-  }, []);
+  }, [isLoading]);
 
   return (
     <div className="App">

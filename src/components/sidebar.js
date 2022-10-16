@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faCode, faContactCard, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { SocialIcon } from 'react-social-icons';
@@ -7,22 +7,22 @@ import './sidebar.scss';
 
 export default function Sidebar({height}) {
   const [activeTab, setActiveTab] = useState('home');
-  const [elementHeight, setElementHeight] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
   const calculateElementHeight = () => {
-    setElementHeight([
+    return [
       {height: height.home, tab: 'home'},
       {height: height.home + height.skills, tab: 'skills'},
       {height: height.home + height.skills + height.projects, tab: 'projects'},
       {height: height.home + height.skills + height.projects + height.contacts, tab: 'contacts'}
-    ])
+    ];
   }
 
+  const calculation = useMemo(() => calculateElementHeight(), [height])
+
   const handleScroll = () => {
-    
     const position = window.pageYOffset;
-    elementHeight.every((element, i) => {
+    calculation.every((element, i) => {
       
       if(position < element.height) {
         setActiveTab(element.tab);
@@ -33,14 +33,13 @@ export default function Sidebar({height}) {
   }
 
   useEffect(() => {
-    calculateElementHeight();
     window.addEventListener('scroll', handleScroll, { passive: true });
     setLoading(false);
 
     return () => {
         window.removeEventListener('scroll', handleScroll);
     };
-  }, [isLoading]);
+  }, [isLoading, height]);
 
   return (
     <div className="sidebar">
