@@ -8,7 +8,7 @@ import { Html, useProgress, OrbitControls, useGLTF } from '@react-three/drei'
 
 import './home.scss';
 //import { Model } from '../assets/3dmodels/';
-import Model from '../assets/3dmodels/food_3d.gltf';
+import Model from '../assets/3dmodels/rat.gltf';
 
 export default function Home() {
   
@@ -35,15 +35,21 @@ export default function Home() {
           <a href="#contacts"><button className="btn btn-outline-warning animate__animated animate__fadeIn animate__delay-4s">Contact Me</button></a>
         </div>
         <div className="banner-zone col-6">
-          <Canvas className="canvas" camera={{ fov: 75, near: 1, far: 1000, position: [3,1,2] }}>
-            <ambientLight intensity={0.1} />
-            <directionalLight intensity={0.5} />
-            <Suspense fallback={<Loader />}>
-              <RotatingObject/>
-              <OrbitControls/>
-            </Suspense> 
-          </Canvas>
+          <div className="canvas">
+            <Canvas camera={{ fov: 75, position: [3,2,2] }}>
+              <ambientLight intensity={0.1} />
+              <directionalLight intensity={0.5} />
+              <Suspense fallback={<Loader />}>
+                <RotatingObject/>
+                <OrbitControls/>
+              </Suspense> 
+            </Canvas>   
+          </div>
+          <div>
+            <p>"Low Quality Horizontally Spinning Rat"</p>
+          </div>
         </div>
+        
       </div>
     </div>
   )
@@ -58,11 +64,11 @@ const RotatingObject = () => {
   const gltf = useGLTF(Model);
   const model = useRef();
   useFrame(() => {
-      model.current.rotation.y += 0.002;
+      model.current.rotation.y += 0.02;
   });
   return (
     <mesh ref={model} scale={1.2}>
-      <primitive object={gltf.scene} scale={0.7} />
+      <primitive object={gltf.scene} scale={3} />
     </mesh>
   )
 };
