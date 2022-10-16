@@ -43,8 +43,8 @@ export default function Sidebar({height}) {
 
   return (
     <div className="sidebar">
-        <div className="logo w-100 mb-5 mt-5">
-          <img src={require('../assets/images/j-icon.png')} alt='icon'/>
+        <div className="logo w-100">
+          <img src={require('../assets/images/ja-logo.png')} alt='icon'/>
         </div>
         <ul className="nav flex-column mb-auto mt-auto">
           <li className={activeTab === 'home' ? 'nav-item active' : 'nav-item'}>
