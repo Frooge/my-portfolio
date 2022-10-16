@@ -28,13 +28,10 @@ export const local = {
     },
     projects: [
         // {img: ,title: , desc: ,ref: },
-        {img: 'https://bobbyhadz.com/images/blog/react-import-const-from-another-file/banner.webp',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
-        {img: 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
-        {img: 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
-        {img: 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
-        {img: 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
-        {img: 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
-        {img: 'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
-        {img: 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928__480.jpg',title: 'budiga_app', desc: 'budiga app implemented with .NET framework',ref: 'https://github.com/therealmai/budiga_app'},
+        {img: 'https://i.postimg.cc/pXLJPJKk/budiga-home.png',title: 'Budiga App', desc: 'An inventory management system implemented with .NET framework', ref: 'https://github.com/therealmai/budiga_app'},
+        {img: 'https://i.postimg.cc/T32fLfzx/mcford.png' ,title: 'Mcford Ecommerce Webapp', desc: 'An ecommerce website implemented with ReactJs and PHP', ref: 'https://github.com/Frooge/2104-ecommerce-webapp'},
+        {img: 'https://i.ibb.co/0CWncq7/signtitiktitle.png',title: 'Signtitik', desc: 'Sign language android app implemented with Xamarin', ref: 'https://github.com/ydblank/Signtitik'},
+        {img: 'https://i.ibb.co/yQvtvMx/calendar.png',title: 'MyCalendar', desc: 'To do list and reminder web application implemented with ReactJs and NodeJs', ref: 'https://github.com/OG-Habit/MyCalendar'},
+
     ]
 };
