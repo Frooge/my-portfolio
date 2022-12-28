@@ -19,7 +19,7 @@ export default function Skills() {
                             I started my programming journey when I watched a documentary on how my favorite video games were made.
                             It piqued my interest and started to learn python but soon realized that there are many things that you can learn and do with programming.
                             That is how I got into this programming rabbit hole and found my passion in this field.
-                            As of now, I'm currently learning web development mainly with ReactJs.
+                            As of now, I'm currently learning mobile development with Flutter.
                         </p>
                     </div>
                 </AnimationOnScroll>

@@ -11,6 +11,7 @@ export const local = {
             {name: "html5",ref: "https://www.w3.org/html/", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"},
             {name: "javascript",ref: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"},
             {name: "php",ref: "https://www.php.net", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"},
+            {name: "dart",ref: "https://dart.dev/", img: "https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"},
         ],
         frameworks: [
             {name: "bootstrap",ref: "https://getbootstrap.com", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"},
@@ -22,6 +23,7 @@ export const local = {
             {name: "nodejs",ref: "https://nodejs.org", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"},
             {name: "xamarin",ref: "https://dotnet.microsoft.com/apps/xamarin", img: "https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg"},
             {name: "reactnative",ref: "https://reactnative.dev/", img: "https://reactnative.dev/img/header_logo.svg"},
+            {name: "flutter",ref: "https://flutter.dev", img: "https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"},
         ],
         tools: [
             {name: "firebase",ref: "https://firebase.google.com/", img: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"},
